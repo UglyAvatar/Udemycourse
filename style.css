@@ -11,15 +11,23 @@ body {
 }
 
 .navbar a {
-    color: unset;
+    color: white;
     text-decoration: none;
+}
+a{
+    color: white;
 }
 
 .navbar a:hover {
     font-size: unset;
     color: #57C5B6;
 }
-
+.navbar a:visited{
+    color: white;
+}
+.navbar a:visited:hover{
+    color: #57C5B6;
+}
 .containerall {
     background-color: #1A5F7A;
     padding-top: 20px;
@@ -46,7 +54,7 @@ a:hover {
 }
 
 a:visited {
-    color: unset;
+    color:unset;
 }
 h3 {
     color: #57C5B6;
