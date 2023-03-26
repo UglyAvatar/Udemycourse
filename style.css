@@ -1,0 +1,56 @@
+body {
+    background-color: #002B5B;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navbar {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar a {
+    color: unset;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    font-size: unset;
+    color: #57C5B6;
+}
+
+.containerall {
+    background-color: #1A5F7A;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+hr {
+    width: 5%;
+    border-style: none;
+    border-bottom: #159895 dotted;
+    border-width: 1rem;
+    scale: 50%;
+}
+
+.profileimg {
+    border: .2rem whitesmoke solid;
+    border-radius: 100%;
+    image-resolution: 200px 200px;
+    width: 200px;
+}
+
+a:hover {
+    font-size: 110%;
+}
+
+a:visited {
+    color: unset;
+}
+h3 {
+    color: #57C5B6;
+}
+p, table{
+    color: whitesmoke;
+}
