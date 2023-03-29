@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.topcontainer,
+.middlecontainer,
+.bottomcontainer {
+ 
+}
+
+.topcontainer {
+    background-color: #95D9C3;
+}
+
+.middlecontainer {
+    background-color: #8AA39B;
+}
+
+.bottomcontainer {
+    background-color: #95D9C3;
+}
+
+img {
+    display: inline-block;
+    object-fit:contain;
+}
+
+.dev:hover {
+    font-size: large;
+
+} 
