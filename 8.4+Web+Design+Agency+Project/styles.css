@@ -25,9 +25,10 @@ body{
 
 h1 {
     text-align: center;
-    font-size: 1vh;
     color: #fff;
     text-shadow: 1px 1px #000;
+    font-size: 5vw;
+
 }
 
 span {
@@ -69,10 +70,6 @@ span {
     text-align: center;
 }
 
-h1 {
-    text-align: center;
-    font-size: 8vw;
-}
 
 .logo {
     display: flex;
@@ -83,6 +80,7 @@ span {
     color: cadetblue;
 }
 
+    
 @media (max-width: 650px) {
     .card-container {
         display: flex;
