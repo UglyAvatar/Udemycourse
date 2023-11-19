@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemy Course 4.0 File Paths</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,800;1,900&display=swap"
+        rel="stylesheet" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            border: seagreen;
+            background-color: rgb(191, 203, 203);
+        }
+
+        .container img {
+            width: 50%;
+            border: 1px solid black;
+            border-radius: 10px 150px;
+            filter: drop-shadow(5px 5px 10px rgb(123, 122, 122));
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>All the Animals</h1>
+        <h2>Rabbit:</h2>
+        <img src="./rabbit.png" alt="">
+        <h2>Cat:</h2>
+        <img src="./folder3/cat.png" alt="">
+        <h2>Dog:</h2>
+        <img src="../dog.png" alt="">
+        <h2>Fish:</h2>
+        <img src="../Folder1/fish.png" alt="">
+        <h2>Bird:</h2>
+        <img src="../Folder1/Folder2/bird.png" alt="">
+    </div>
+</body>
+
+</html>
