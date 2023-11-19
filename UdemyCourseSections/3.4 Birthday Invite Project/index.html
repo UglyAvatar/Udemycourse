@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemy Course 3.4 Birthday Invite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,800;1,900&display=swap"
+        rel="stylesheet" />
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(to right, #D3D3D3, #87CEEB, #98FB98, #FFD700, #FFA07A, #DDA0DD);
+        }
+
+        .banner {
+            width: 100vw;
+            height: 40vh;
+            object-fit: cover;
+            margin-top: -5rem;
+            background-color: rgb(0, 0, 0);
+            filter: brightness(75%);
+        }
+
+        h1 {
+            text-align: center;
+            position: relative;
+            top: 10rem;
+            font-size: 4rem;
+            letter-spacing: .5rem;
+            color: whitesmoke;
+            z-index: 1;
+        }
+
+        @media screen and (min-width: 644px) {
+            .banner {
+                margin-top: -10rem;
+            }
+
+            h1 {
+                top: 10rem;
+            }
+
+        }
+
+        @media screen and (max-width: 646px) {
+            .banner {
+                margin-top: -10rem;
+            
+            }
+
+            h1 {
+                top: 5rem;
+            }
+        }
+
+        @media screen and (max-width: 396px) {
+            .banner {
+                margin-top: -10rem;
+
+            }
+
+            h1 {
+                top: 2rem;
+                font-size: 3rem;
+            }
+
+        }
+
+        .list {
+            margin: 10px;
+            padding: 10px;
+
+        }
+
+        .list li {
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 10px;
+            display: inline-flex;
+            list-style: none;
+            margin: 10px;
+            padding: 10px;
+            background: linear-gradient(to right, #D3D3D3, #87CEEB, #98FB98, #FFD700, #FFA07A, #DDA0DD);
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 40vh;
+           
+        }
+        h2{
+            text-align: center;
+            
+        }
+        .map {
+            background: linear-gradient(to right, #D3D3D3, #87CEEB, #98FB98, #FFD700, #FFA07A, #DDA0DD);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <h1>It's My Birthday!</h1>
+        <img class="banner" src="https://images.pexels.com/photos/796605/pexels-photo-796605.jpeg" alt="banner">
+    </div>
+    <section>
+        <h2>What to bring</h2>
+        <div class="list">
+            <ul>
+                <li>Yourself</li>
+                <li>Your friends</li>
+                <li>Your Fun</li>
+            </ul>
+        </div>
+    </section>
+    <div class="map">
+        <h2>Where to go</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15022.51687661201!2d-155.066467!3d19.7284039!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x79524c9eade552e9%3A0x2c9e62266293b620!2sHilo%20Hawaiian%20Hotel!5e0!3m2!1sen!2sus!4v1700389111109!5m2!1sen!2sus"
+            allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</body>
+
+</html>
