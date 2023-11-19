@@ -4,3 +4,5 @@ This is for training using the Udemy  course. https://www.udemy.com/course/the-c
  #8AA39B, #95D9C3, #A4F9C8, #004346, #A7FFF6
 
 Your site is live at https://uglyavatar.github.io/Udemycourse/
+Support Links 
+https://www.appbrewery.co/p/newsletter/
