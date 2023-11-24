@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Internal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,800;1,900&display=swap"
+      rel="stylesheet" />
+
+  <style>
+    body {
+margin: 0;
+padding: 0;
+font-family: 'Montserrat', sans-serif;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+width: auto;
+gap: .5rem;
+
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap:1rem;
+  width: 100%;
+  height:fit-content
+}
+a {
+  
+  border: none;
+  text-decoration: none;
+  font-weight: 400;
+  border-radius: .2rem;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: .3s;
+  
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+iframe {
+  width: 90%;
+  height: 20vh;
+  border: none;
+  
+}
+
+/* visited link */
+a:visited {
+  color: rgb(11, 11, 11);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(248, 248, 249);
+  scale: 1.1;
+ background-color: rgb(0, 128, 60);
+
+}
+
+/* selected link */
+a:active {
+  color: green;
+}
+</style>
+</head>
+
+<body>
+  <h1>Three Methods of Adding CSS</h1>
+  <nav>
+    <a href="./inline.html" target="_blank">Inline</a>
+    <a href="./internal.html" target="_blank">Internal</a>
+    <a href="./external.html" target="_blank">External</a>
+  </nav>
+  <section>
+    <div>
+      <iframe src="./inline.html" frameborder="0" alt="surfer image"></iframe>
+      <iframe src="./internal.html" frameborder="0"></iframe>
+      <iframe src="./external.html" frameborder="0"></iframe>
+    </div>
+  </section>
+  <!-- Create 3 Links to The 3 Webpages: inline, internal and external -->
+</body>
+
+</html>
