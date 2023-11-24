@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Internal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,800;1,900&display=swap"
+      rel="stylesheet" />
+
+  <style>
+    body {
+margin: 0;
+font-family: 'Montserrat', sans-serif;
+
+}
+header {
+height: 100vh;
+background-image: url("https://images.pexels.com/photos/10876557/pexels-photo-10876557.jpeg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+filter:saturate(150%);
+/* flex-box thing */
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-size: cover;
+}
+h1 {
+text-shadow:  .1rem .4rem .1rem rgb(253, 180, 180);
+background: -webkit-linear-gradient(#aa0d10, #4e0101);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 600px, max-width: 900px) {
+h1 {
+    font-size: calc(1rem + 1vw);
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+h1 {
+    font-size: calc(2rem + 1vw);
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+h1 {
+    font-size: calc(2rem + 1vw);
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+h1 {
+font-size: calc(3rem + 1vw);
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+h1 {
+font-size: calc(5rem + 1vw);
+}
+}
+
+  </style>
+</head>
+
+<body>
+<header>
+<h1>Style Me in Red!</h1>
+</header>
+</body>
+</html>
