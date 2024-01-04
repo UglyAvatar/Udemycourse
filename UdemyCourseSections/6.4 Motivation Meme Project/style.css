@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    height: 100vh;
+    background-image: url('./assets/images/table\ chair\ wall.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+@media screen and (max-width: 400px) {
+    body {
+        background-image: url('./assets/images/pexels-inga-seliverstova-3603994.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+    } 
+    
+
+}
+
+section {
+    
+    height: 100vh;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 605px;
+    width: 495px;
+    position: absolute;
+    top: 40.6%;
+    left: 48.8%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+
+}
+
+
+#image {
+    width: 80%;
+    border: .2em solid white;
+    padding: 0;
+    margin-top: 5em;
+}
+
+#image img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+#text {
+    text-align: center;
+}
+
+#text p {
+    font-size: 1.2em;
+    padding: 0 10px;
+}
+
+#text h1 {
+    font-size: 4em;
+    letter-spacing: 15px;
+    font-weight: 400;
+}
+
+hr {
+    width: 80%;
+}
