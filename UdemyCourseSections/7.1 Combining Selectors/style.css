@@ -1,0 +1,40 @@
+/* Write your code here: */
+
+body {
+    /* the body code is all my personal code that goes beyond the style that requirments */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    background-image: url(https://images.pexels.com/photos/268349/pexels-photo-268349.jpeg);
+    background-size: 800px 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #16120f;
+
+}
+
+h1, h2 {
+    color: blueviolet;
+}
+
+.box > p {
+    color: firebrick
+}
+
+.box li {
+    color: blue
+}
+
+li.done {
+    color:seagreen;
+}
+
+ul p.done {
+    font-size: 0.5rem;
+    letter-spacing: .2em;
+}
