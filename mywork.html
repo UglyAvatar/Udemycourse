@@ -36,6 +36,9 @@
         /* bootstrap */
         body {
             font-family: 'Montserrat', sans-serif;
+            background-color: #E6F4F1;
+            /* background: linear-gradient(144deg, rgba(190,252,255,1) 0%, rgba(86,186,172,1) 48%, rgba(88,164,168,1) 100%); */
+
         }
 
         .jumbotron {
@@ -66,6 +69,7 @@
         .card {
             border: .1rem solid rgb(38, 38, 38);
             padding-top: 1rem;
+            width:400px
 
         }
 
@@ -75,7 +79,6 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            width: 400px;
             height: auto;
 
         }
@@ -91,6 +94,10 @@
             font-size: large;
             font-weight: 600;
         }
+        .btn {
+            background-color:#58a4a8;
+            border-color: #58a4a8;
+        }
 
         footer {
             display: flex;
@@ -104,7 +111,7 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar fixed-top navbar-light bg-light">
         <ul class="nav justify-content-center  ">
             <li class="nav-item">
                 <a class="nav-link active" href="index.html" target="_blank" aria-current="page">Home</a>
@@ -348,44 +355,36 @@
             </div>
         </div>
         <!-- Card23 -->
-        <div class="card">
-            <img src="./images/7.3.jpg" class="card-img-top" alt="site screenshot">
-            <div class="card-body">
-                <h5 class="card-title">7.3 CSS Flag Project</h5>
-                <p class="card-text">This Flag stands for Life</p>
-                <a href="./UdemyCourseSections/7.3 CSS Flag Project/index.html" target="_blank"
-                    class="btn btn-primary">Check It Out</a>
-            </div>
+    <div class="card">
+        <img src="./images/7.3.jpg" class="card-img-top" alt="site screenshot">
+        <div class="card-body">
+            <h5 class="card-title">7.3 CSS Flag Project</h5>
+            <p class="card-text">This Flag stands for Life</p>
+            <a href="./UdemyCourseSections/7.3 CSS Flag Project/index.html" target="_blank"
+                class="btn btn-primary">Check It Out</a>
         </div>
-        <!-- Card24 -->
-        <div class="card">
-            <img src="./images/8.0.jpg" class="card-img-top" alt="site screenshot">
-            <div class="card-body">
-                <h5 class="card-title">8.0. CSS Display</h5>
-                <p class="card-text">Such an in-line block head </p>
-                <a href="./UdemyCourseSections/7.3 CSS Flag Project/index.html" target="_blank"
-                    class="btn btn-primary">Check It Out</a>
-            </div>
-            <!-- Card25 -->
-            <div class="card">
-                <img src="./images/8.0.jpg" class="card-img-top" alt="site screenshot">
-                <div class="card-body">
-                    <h5 class="card-title">8.0. CSS Display</h5>
-                    <p class="card-text">Such an in-line block head </p>
-                    <a href="./UdemyCourseSections/7.3 CSS Flag Project/index.html" target="_blank"
-                        class="btn btn-primary">Check It Out</a>
-                </div>
-            </div>
-            <!-- Final Card -->
-            <div class="card">
-                <img src="https://images.pexels.com/photos/211122/pexels-photo-211122.jpeg" class="card-img-top"
-                    alt="site screenshot">
-                <div class="card-body">
-                    <h5 class="card-title">Come back later</h5>
-                    <p class="card-text">There may be something to see.</p>
-                    <a href="#" target="_blank" class="btn btn-primary">Nothing to see here</a>
-                </div>
-            </div>
+    </div>
+    <!-- Card24 -->
+    <div class="card">
+        <img src="./images/8.0.jpg" class="card-img-top" alt="site screenshot">
+        <div class="card-body">
+            <h5 class="card-title">8.0. CSS Display</h5>
+            <p class="card-text">Such an in-line block head </p>
+            <a href="./UdemyCourseSections/7.3 CSS Flag Project/index.html" target="_blank"
+                class="btn btn-primary">Check It Out</a>
+        </div>
+    </div>
+        
+    <!-- Final Card -->
+    <div class="card">
+        <img src="https://images.pexels.com/photos/211122/pexels-photo-211122.jpeg" class="card-img-top"
+            alt="site screenshot">
+        <div class="card-body">
+            <h5 class="card-title">Come back later</h5>
+            <p class="card-text">There may be something to see.</p>
+            <a href="#" target="_blank" class="btn btn-primary">Nothing to see here</a>
+        </div>
+    </div>
 
     </section>
 
