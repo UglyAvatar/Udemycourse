@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Projects</title>
+    <!-- Google start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,800;1,900&display=swap"
+        rel="stylesheet" />
+    <!-- bootstrap start -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .jumbotron {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-size: large;
+        }
+
+        h1 {
+            font-size: 4em;
+        }
+
+
+        .banner-container {
+            display: flex;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+            white-space: nowrap;
+            width: 800px;
+            scrollbar-color: transparent transparent;
+            
+            height: fit-content;
+            gap: 1rem;
+            
+        }
+
+        .card {
+            flex: 0 0 auto;
+            scroll-snap-align: start;
+            width: 800px;
+            height: 400px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            object-fit: scale-down;
+            object-position: center;
+            
+            font-size: larger;
+            text-align: center;
+            
+            
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+            padding: 1rem;
+        }
+        h5 {
+            font-size: large;
+            font-weight: 600;
+        }
+
+        .btn {
+            background-color: #58a4a8;
+            border-color: #58a4a8;
+        }
+
+        /* Style for the scrollbar track */
+        .banner-container::-webkit-scrollbar-track {
+            background-color: transparent;
+            /* Make the track transparent */
+        }
+
+        /* Style for the scrollbar thumb */
+        .banner-container::-webkit-scrollbar-thumb {
+            background-color: transparent;
+            /* Make the thumb transparent */
+        }
+        footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding: 1rem 0rem;
+        }
+     
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar fixed-top navbar-light bg-light">
+        <ul class="nav justify-content-center  ">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html" target="_blank" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="about.html" target="_blank" aria-current="page">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="mywork.html" target="_blank" aria-current="page">My Work</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <h1>Hello, Everyone!</h1>
+        <p>This is just the start</p>
+        <p><a class="btn btn-primary btn-lg" href="https://hellowordl.net/" target="_blank" role="button">Have some
+                time?</a></p>
+    </div>
+    <div class="banner-container">
+        <!-- Repeat the same set of images to create an endless loop -->
+        <!-- Card 1 -->
+<div class="card" onclick="scrollToNeighbor(this)">
+    <img src="./images/2.1 Course.jpg" class="card-img-top" alt="site screenshot">
+    <div class="card-body">
+        <h5 class="card-title">2.1 Heading Element</h5>
+        <p class="card-text">The very first practice of the course.</p>
+        <a href="./UdemyCourseSections/2.1 Heading Element/index.html" target="_blank"
+            class="btn btn-primary">Check It Out</a>
+    </div>
+</div>
+
+<!-- Card 2 -->
+<div class="card" onclick="scrollToNeighbor(this)">
+    <img src="./images/2.2 .jpg" class="card-img-top" alt="site screenshot">
+    <div class="card-body">
+        <h5 class="card-title">2.2 Paragraph Element</h5>
+        <p class="card-text">Let's say a little more</p>
+        <a href="./UdemyCourseSections/2.2 Paragraph Element/index.html" class="btn btn-primary"
+            target="_blank">Check It Out</a>
+    </div>
+</div>
+
+<!-- Card 3 -->
+<div class="card" onclick="scrollToNeighbor(this)">
+    <img src="./images/2.3.jpg" class="card-img-top" alt="site screenshot">
+    <div class="card-body">
+        <h5 class="card-title">2.3 Void Elements</h5>
+        <p class="card-text">Let's take a step into the void.</p>
+        <a href="./UdemyCourseSections/2.3 Void Elements/index.html" class="btn btn-primary"
+            target="_blank">Check It Out</a>
+    </div>
+</div>
+
+<!-- Card 4 -->
+<div class="card" onclick="scrollToNeighbor(this)">
+    <img src="./images/2.4.jpg" class="card-img-top" alt="site screenshot">
+    <div class="card-body">
+        <h5 class="card-title">2.4 Movie Ranking Project</h5>
+        <p class="card-text">Let's watch and see what we've learned</p>
+        <a href="./UdemyCourseSections/2.4 Movie Ranking Project/index.html" target="_blank"
+            class="btn btn-primary">Check It Out</a>
+    </div>
+</div>
+
+<!-- Card 5 -->
+<div class="card" onclick="scrollToNeighbor(this)">
+    <img src="./images/3.0.jpg" class="card-img-top" alt="site screenshot">
+    <div class="card-body">
+        <h5 class="card-title">3.0 List Elements</h5>
+        <p class="card-text">Can I list all the natural elements?</p>
+        <a href="./UdemyCourseSections/3.0 List Elements/" target="_blank" class="btn btn-primary">Check It
+            Out</a>
+    </div>
+</div>
+
+<!-- Card 6 -->
+<div class="card" onclick="scrollToNeighbor(this)">
+    <img src="./images/3.1.jpg" class="card-img-top" alt="site screenshot">
+    <div class="card-body">
+        <h5 class="card-title">3.1 Nesting and Indentation</h5>
+        <p class="card-text">Im'a make a nest and nap.</p>
+        <a href="./UdemyCourseSections/3.1 Nesting and Indentation/index.html" target="_blank"
+            class="btn btn-primary">Check It Out</a>
+    </div>
+</div>
+
+<!-- Card 7 -->
+<div class="card" onclick="scrollToNeighbor(this)">
+    <img src="./images/3.2.jpg" class="card-img-top" alt="site screenshot">
+    <div class="card-body">
+        <h5 class="card-title">3.2 Anchor Elements</h5>
+        <p class="card-text">Let's drop anchor and see whats up.</p>
+        <a href="./UdemyCourseSections/3.2 Anchor Elements/index.html" target="_blank"
+            class="btn btn-primary">Check It Out</a>
+    </div>
+</div>
+
+<!-- Card 8 -->
+<div class="card" onclick="scrollToNeighbor(this)">
+    <img src="./images/3.3.jpg" class="card-img-top" alt="site screenshot">
+    <div class="card-body">
+        <h5 class="card-title">3.3 Image Elements</h5>
+        <p class="card-text">Take a picture it'll last longer.</p>
+        <a href="./UdemyCourseSections/3.3 Image Elements/index.html" target="_blank"
+            class="btn btn-primary">Check It Out</a>
+    </div>
+</div>
+
+<!-- Card 9 -->
+<div class="card" onclick="scrollToNeighbor(this)">
+    <img src="./images/3.4.jpg" class="card-img-top" alt="site screenshot">
+    <div class="card-body">
+        <h5 class="card-title">3.4 Birthday Invite Project</h5>
+        <p class="card-text">For my Birthday I want...</p>
+        <a href="./UdemyCourseSections/3.4 Birthday Invite Project/index.html" target="_blank"
+            class="btn btn-primary">Check It Out</a>
+    </div>
+</div>
+
+<!-- Card 10 -->
+<div class="card" onclick="scrollToNeighbor(this)">
+    <img src="./images/4.0.jpg" class="card-img-top" alt="site screenshot">
+    <div class="card-body">
+        <h5 class="card-title">4.0 File Paths</h5>
+        <p class="card-text">Chart a path to animals.</p>
+        <a href="./UdemyCourseSections/4.0 File Paths/Folder0/index.html" target="_blank"
+            class="btn btn-primary">Check It Out</a>
+    </div>
+</div>
+
+<!-- Card 11 -->
+<div class="card" onclick="scrollToNeighbor(this)">
+    <img src="./images/4.1.jpg" class="card-img-top" alt="site screenshot">
+    <div class="card-body">
+        <h5 class="card-title">4.1 Webpages</h5>
+        <p class="card-text">This is just a basic page. No wit.</p>
+        <a href="./UdemyCourseSections/4.1 Webpages/index.html" target="_blank"
+            class="btn btn-primary">Check It Out</a>
+    </div>
+</div>
+
+<!-- Card 12 -->
+<div class="card" onclick="scrollToNeighbor(this)">
+    <img src="./images/4.3.jpg" class="card-img-top" alt="site screenshot">
+    <div class="card-body">
+        <h5 class="card-title">4.3 HTML Portfolio Project</h5>
+        <p class="card-text">Listing my work</p>
+        <a href="./UdemyCourseSections/4.3 HTML Portfolio Project/index.html" target="_blank"
+            class="btn btn-primary">Check It Out</a>
+    </div>
+</div>
+
+<!-- Card 13 -->
+<div class="card" onclick="scrollToNeighbor(this)">
+    <img src="./images/5.1.jpg" class="card-img-top" alt="site screenshot">
+    <div class="card-body">
+        <h5 class="card-title">5.1 Adding CSS</h5>
+        <p class="card-text">Listing my work</p>
+        <a href="./UdemyCourseSections/5.1 Adding CSS/index.html" target="_blank"
+            class="btn btn-primary">Check It Out</a>
+    </div>
+</div>
+
+<!-- Card 14 -->
+<div class="card" onclick="scrollToNeighbor(this)">
+    <img src="./images/5.3.jpg" class="card-img-top" alt="site screenshot">
+    <div class="card-body">
+        <h5 class="card-title">5.3 CSS Selectors</h5>
+        <p class="card-text">Lets select them and play.</p>
+        <a href="./UdemyCourseSections/5.3 CSS Selectors/index.html" target="_blank"
+            class="btn btn-primary">Check It Out</a>
+    </div>
+</div>
+
+<!-- Card 15 -->
+<div class="card" onclick="scrollToNeighbor(this)">
+    <img src="./images/5.4.jpg" class="card-img-top" alt="site screenshot">
+    <div class="card-body">
+        <h5 class="card-title">5.4 Color Vocab Project</h5>
+        <p class="card-text">Lets Learn Some Colors</p>
+        <a href="./UdemyCourseSections/5.4 Color Vocab Project/index.html" target="_blank"
+            class="btn btn-primary">Check It Out</a>
+    </div>
+</div>
+
+<!-- Card 16 -->
+<div class="card" onclick="scrollToNeighbor(this)">
+    <img src="./images/6.0.jpg" class="card-img-top" alt="site screenshot">
+    <div class="card-body">
+        <h5 class="card-title">6.0 CSS Colors</h5>
+        <p class="card-text">Color me impressed</p>
+        <a href="./UdemyCourseSections/6.0 CSS Colors/index.html" target="_blank"
+            class="btn btn-primary">Check It Out</a>
+    </div>
+</div>
+
+<!-- Card 17 -->
+<div class="card" onclick="scrollToNeighbor(this)">
+    <img src="./images/6.1.jpg" class="card-img-top" alt="site screenshot">
+    <div class="card-body">
+        <h5 class="card-title">6.1 Font Properties</h5>
+        <p class="card-text">Font me Proper</p>
+        <a href="./UdemyCourseSections/6.1 Font Properties/index.html" target="_blank"
+            class="btn btn-primary">Check It Out</a>
+    </div>
+</div>
+
+<!-- Card 18 -->
+<div class="card" onclick="scrollToNeighbor(this)">
+    <img src="./images/6.3.jpg" class="card-img-top" alt="site screenshot">
+    <div class="card-body">
+        <h5 class="card-title">6.3 CSS Box Model</h5>
+        <p class="card-text">Been Boxin for a Box Model</p>
+        <a href="./UdemyCourseSections/6.3 CSS Box Model/index.html" target="_blank"
+            class="btn btn-primary">Check It Out</a>
+    </div>
+</div>
+
+<!-- Card 19 -->
+<div class="card" onclick="scrollToNeighbor(this)">
+    <img src="./images/6.4.jpg" class="card-img-top" alt="site screenshot">
+    <div class="card-body">
+        <h5 class="card-title">6.4 Motivation Meme Project</h5>
+        <p class="card-text">I'm just trying to feel something</p>
+        <a href="./UdemyCourseSections/6.4 Motivation Meme Project/index.html" target="_blank"
+            class="btn btn-primary">Check It Out</a>
+    </div>
+</div>
+
+<!-- Card 20 -->
+<div class="card" onclick="scrollToNeighbor(this)">
+    <img src="./images/7.0.jpg" class="card-img-top" alt="site screenshot">
+    <div class="card-body">
+        <h5 class="card-title">7.0 CSS Cascade</h5>
+        <p class="card-text">Keep'n it simple</p>
+        <a href="./UdemyCourseSections/7.0 CSS Cascade/index.html" target="_blank"
+            class="btn btn-primary">Check It Out</a>
+    </div>
+</div>
+
+<!-- Card 21 -->
+<div class="card" onclick="scrollToNeighbor(this)">
+    <img src="./images/7.1.jpg" class="card-img-top" alt="site screenshot">
+    <div class="card-body">
+        <h5 class="card-title">7.0 CSS Cascade</h5>
+        <p class="card-text">List this out </p>
+        <a href="./UdemyCourseSections/7.1 Combining Selectors/index.html" target="_blank"
+            class="btn btn-primary">Check It Out</a>
+    </div>
+</div>
+
+<!-- Card 22 -->
+<div class="card" onclick="scrollToNeighbor(this)">
+    <img src="./images/7.2.jpg" class="card-img-top" alt="site screenshot">
+    <div class="card-body">
+        <h5 class="card-title">7.2 CSS Positioning</h5>
+        <p class="card-text">Come in All Shapes and sizes</p>
+        <a href="./UdemyCourseSections/7.2 CSS Positioning/index.html" target="_blank"
+            class="btn btn-primary">Check It Out</a>
+    </div>
+</div>
+
+<!-- Card 23 -->
+<div class="card" onclick="scrollToNeighbor(this)">
+    <img src="./images/7.3.jpg" class="card-img-top" alt="site screenshot">
+    <div class="card-body">
+        <h5 class="card-title">7.3 CSS Flag Project</h5>
+        <p class="card-text">This Flag stands for Life</p>
+        <a href="./UdemyCourseSections/7.3 CSS Flag Project/index.html" target="_blank"
+            class="btn btn-primary">Check It Out</a>
+    </div>
+</div>
+
+<!-- Card 24 -->
+<div class="card" onclick="scrollToNeighbor(this)">
+    <img src="./images/8.0.jpg" class="card-img-top" alt="site screenshot">
+    <div class="card-body">
+        <h5 class="card-title">8.0 CSS Display</h5>
+        <p class="card-text">Such an in-line block head </p>
+        <a href="./UdemyCourseSections/7.3 CSS Flag Project/index.html" target="_blank"
+            class="btn btn-primary">Check It Out</a>
+    </div>
+</div>
+
+<!-- Card 25 -->
+<div class="card" onclick="scrollToNeighbor(this)">
+    <img src="./images/8.3.jpg" class="card-img-top" alt="site screenshot">
+    <div class="card-body">
+        <h5 class="card-title">8.3 Media Query</h5>
+        <p class="card-text">Query: Is this media? </p>
+        <a href="./UdemyCourseSections/8.3 Media Query/index.html" target="_blank"
+            class="btn btn-primary">Check It Out</a>
+    </div>
+</div>
+
+<!-- Card 26 -->
+<div class="card" onclick="scrollToNeighbor(this)">
+    <img src="./images/8.4.jpg" class="card-img-top" alt="site screenshot">
+    <div class="card-body">
+        <h5 class="card-title">8.4 Web Design Agency</h5>
+        <p class="card-text">Be an agent of design </p>
+        <a href="./UdemyCourseSections/8.4 Web Design Agency Project/index.html" target="_blank"
+            class="btn btn-primary">Check It Out</a>
+    </div>
+</div>
+
+<!-- Card 27 -->
+<div class="card" onclick="scrollToNeighbor(this)">
+    <img src="./images/9.0.jpg" class="card-img-top" alt="site screenshot">
+    <div class="card-body">
+        <h5 class="card-title">9.0 Display Flex</h5>
+        <p class="card-text">Let's Get Flexible</p>
+        <a href="./UdemyCourseSections/9.0 Display Flex/index.html" target="_blank"
+            class="btn btn-primary">Check It Out</a>
+    </div>
+</div>
+
+<!-- Card 28 -->
+<div class="card" onclick="scrollToNeighbor(this)">
+    <img src="./images/9.1.jpg" class="card-img-top" alt="site screenshot">
+    <div class="card-body">
+        <h5 class="card-title">9.1 Flex Direction</h5>
+        <p class="card-text">Not just 1 Direction</p>
+        <a href="./UdemyCourseSections/9.1 Flex Direction/index.html" target="_blank"
+            class="btn btn-primary">Check It Out</a>
+    </div>
+</div>
+
+<!-- Final Card -->
+<div class="card" onclick="scrollToNeighbor(this)">
+    <img src="https://images.pexels.com/photos/211122/pexels-photo-211122.jpeg" class="card-img-top"
+        alt="site screenshot">
+    <div class="card-body">
+        <h5 class="card-title">Final Project</h5>
+        <p class="card-text">Congratulations on reaching the final project!</p>
+        <a href="./UdemyCourseSections/Final Project/index.html" target="_blank"
+            class="btn btn-primary">Check It Out</a>
+    </div>
+</div>
+
+        <!-- Repeat the same set of images to create an endless loop -->
+    </div>
+
+    <script>
+        function scrollToNeighbor(card) {
+            const container = document.querySelector('.banner-container');
+            const cardRect = card.getBoundingClientRect();
+            const containerRect = container.getBoundingClientRect();
+
+            if (event.clientX - containerRect.left < cardRect.width / 5) {
+                // Clicked on the left edge
+                container.scrollBy({ left: -cardRect.width, behavior: 'smooth' });
+            } else if (event.clientX - containerRect.left > (cardRect.width / 5) * 4) {
+                // Clicked on the right edge
+                container.scrollBy({ left: cardRect.width, behavior: 'smooth' });
+            }
+        }
+
+        // Duplicate the cards to create an endless loop
+        const bannerContainer = document.querySelector('.banner-container');
+        const cards = document.querySelectorAll('.card');
+
+        cards.forEach((card) => {
+            const duplicateCard = card.cloneNode(true);
+            bannerContainer.appendChild(duplicateCard);
+        });
+        // Check when the user has scrolled to the end, then scroll back to the beginning
+        bannerContainer.addEventListener('scroll', () => {
+            if (bannerContainer.scrollLeft + bannerContainer.clientWidth >= bannerContainer.scrollWidth) {
+                // User has scrolled to the end, scroll back to the beginning
+                bannerContainer.scrollLeft = 0;
+            }
+        });
+    </script>
+</body>
+
+</html>
