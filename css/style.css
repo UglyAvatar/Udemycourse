@@ -12,7 +12,7 @@ body {
 }
 
 
-.bannercontainer {
+/* .bannercontainer {
     text-align: center;
     background-image: url(../images/UAbannerbk.jpg);
     color: white;
@@ -23,19 +23,19 @@ body {
     height: 95vh;
     background-size: cover;
 
-}
+} */
 
-.bannercontainer h1 {
+/* .bannercontainer h1 {
     font-weight: bolder;
     font-size: 10vw;
-}
+} */
 
-@media screen and (min-width: 400px) {
+/* @media screen and (min-width: 400px) {
     .bannercontainer h1 {
         font-size: 6vw;
     }
 
-}
+} */
 
 .bannercontainersm {
     background-image: url(../images/meblurrybanner.jpg);
@@ -91,6 +91,7 @@ body {
     width: 800px;
 }
 
+/* HOME PAGE */
 /* video background hero */
 header {
     position: relative;
@@ -116,6 +117,16 @@ header video {
     transform: translateX(-50%) translateY(-50%);
 }
 
+@media screen and (max-width: 400px) {
+    header video {
+        display: block;
+        width: 100;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+}
+
 header .container {
     position: relative;
     z-index: 2;
@@ -138,10 +149,5 @@ header .overlay {
 
 @media (pointer: coarse) and (hover: none) {
     header {
-        background: url('/images/meblurrybanner.jpg') black no-repeat center center scroll;
+        background: url('/images/pexels-nemuel-sereti-6424587.jpg') no-repeat center center scroll;
     }
-
-    header video {
-        display: none;
-    }
-}
