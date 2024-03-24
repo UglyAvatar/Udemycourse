@@ -1,5 +1,3 @@
-
-
 h1,
 h2,
 h3,
@@ -18,12 +16,14 @@ link,
 span {
     font-family: 'Open Sans', sans-serif;
 }
+
 .lead {
     color: white;
     word-spacing: .2em;
     letter-spacing: .1em;
 
 }
+
 
 .navbar {
     background-color: #2A9D8F;
@@ -75,6 +75,15 @@ span {
     border-left: #fee096 2px solid;
     border-top-length: .5em;
 }
+
+@media screen and (max-width: 575px) {
+    .psection {
+        border-left: none;
+        border-top-length: none;
+    }
+
+}
+
 #my-passion {}
 
 #about-me {
@@ -86,27 +95,34 @@ span {
     background-color: #E9C46A;
 
 }
-.image-container{
+
+.image-container {
     border-top: #E76F51 1px solid;
     border-left: #E76F51 1px solid;
     border-right: #fee096 1px solid;
     border-radius: 1em 1em 0 0;
 }
-.image-container img{
+
+.image-container img {
     border-radius: 1em 1em 0 0;
 }
 
 #my-work {
     background-color: #E76F51;
-    padding-top: 2em; 
+    padding-top: 2em;
 }
 
 @media screen and (min-width: 768px) {
-    #my-work h2{
+    #my-work {
+        padding-left: 6em;
+    }
+
+    #my-work h2 {
         display: flex;
         justify-content: center;
-        padding-right: 1.5em;
+        padding-right: 4em;
     }
+
 }
 
 
@@ -295,7 +311,7 @@ footer p {
 .external-link {
     position: relative;
     overflow: visible;
-    padding-right: 1.5em;
+    padding-right: none;
     color: white;
     text-decoration: none;
 }
@@ -306,11 +322,9 @@ footer p {
 
 .external-link .link-icon {
     position: absolute;
-    right: 0;
+    right: -20%;
     top: 50%;
     transform: scale(0.5) translate(-100%, -100%);
-    
-    
 
     display: inline-block;
     width: 1em;
@@ -346,14 +360,25 @@ footer p {
     flex-wrap: wrap;
     width: 80vw;
     margin: auto;
-    
+
 }
 
-/* Media Queries for Tablet */
-@media screen and (max-width: 768px) {
-    .external-link .link-icon svg {
-      
+/* Media Queries  */
+@media screen and (min-width: 768px) {
+    .external-link {
+        padding-right: 1em;
     }
+
+    .external-link .link-icon {
+        right: -5%;
+        top: 50%;
+        transform: scale(0.5) translate(-100%, -100%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .external-link {}
+
     .external-link.big {
         font-size: 3em;
     }
@@ -362,40 +387,44 @@ footer p {
 
 /* Media Queries for Mobile */
 @media screen and (max-width: 576px) {
-    html, body {
+
+    html,
+    body {
         overflow-x: hidden;
-      }
-      body {
+    }
+
+    body {
         position: relative
-      }
+    }
+
     .mysitecontainer {
         display: block;
-        width: 100vw;
         font-size: .8em;
         font-weight: 900
     }
+
 }
+
 @media screen and (max-width: 400px) {
-    .external-link.big {
-        
-    }
+    .external-link.big {}
+
     .mysitecontainer {
         display: block;
-        width: 100vw;
+
         font-size: .6em;
         font-weight: 900
     }
 }
+
 @media screen and (max-width: 300px) {
-    .external-link.big {
-        
-    }
+    .external-link.big {}
+
     .mysitecontainer {
         display: block;
-        width: 100vw;
         font-size: .5em;
         font-weight: 900
     }
+
     .sitetxt {
         font-size: .2em;
     }
@@ -404,4 +433,4 @@ footer p {
 
 
 
-            @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
